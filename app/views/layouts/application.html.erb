@@ -29,13 +29,20 @@
         <ul class="dropdown">
           <li> <%= render 'devise/menu/registration_items' %> </li>
           <li> <%= render 'devise/menu/login_items' %> </li>
+          <li> <%= render 'devise/menu/profile' %> </li>
         </ul>
       </li>
     </ul>
 
     <!-- Left Nav Section -->
     <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
+      <li class="has-dropdown">
+        <a href="#">My Content</a>
+        <ul class="dropdown">
+          <li> <%= render 'devise/menu/directories' %> </li>
+          <li> <%= render 'devise/menu/files' %> </li>
+        </ul>
+      </li>
     </ul>
     </section>
     </nav>
